@@ -5,7 +5,6 @@ function Buffer(str,encoding){
 		case "number":
 			return new Uint8Array(str);
 		case "object":
-            console.log("array");
 			var b = new Uint8Array(str.length);
 			for(var i = 0; i < b.length; i++){
 				b[i] = str[i];
